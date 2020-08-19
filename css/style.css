@@ -1,0 +1,687 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Genshin";
+  src: url(font/GenShinGothic-ExtraLight.ttf);
+  font-weight: 100;
+}
+/*
+:root{
+    --maingreen: #419e9d;
+  }
+  これやると color: var(--maingray);で通るし一遍に色変えれるから地味に便利
+ */
+
+body {
+  background: linear-gradient(to bottom right, #d1e3e7, #f9d0d8);
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 7% 0.5% 7%;
+  position: fixed;
+  z-index: 20;
+}
+
+.header-logo-wrap {
+  width: 180px;
+}
+
+.header-logo-wrap img {
+  width: 100%;
+}
+
+.header-nav-list {
+  list-style: none;
+}
+
+.header-nav-list li {
+  display: inline-block;
+  margin: 0 2vw;
+}
+
+.header-nav-list li img {
+  width: 10%;
+}
+
+.header-nav-list a {
+  text-decoration: none;
+  color: #51444e;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-family: "Genshin";
+}
+
+.accbox label {
+  display: block;
+  color: #51444e;
+  cursor: pointer;
+  font-family: "Genshin";
+}
+
+.accbox input {
+  display: none;
+}
+
+.accbox .accshow {
+  position: absolute;
+  height: 0;
+  padding: 0 5px 3px 5px;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: right;
+  background-color: rgb(230, 216, 222);
+  border-radius: 0 0 10px 10px;
+  line-height: 30px;
+}
+
+.cssacc:checked + .accshow {
+  height: auto;
+  padding-top: 7px;
+  opacity: 1;
+}
+
+.main-visual {
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.main-visual-title {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: #51444e;
+  font-size: 100px;
+  font-family: "Genshin";
+  line-height: 1.8;
+  font-weight: 100;
+}
+
+.main-visual-img-wrap {
+  width: 80%;
+  height: 100%;
+  float: right;
+}
+
+.main-visual-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  font-family: "Genshin";
+  padding: 100px 0;
+  text-align: center;
+  color: #51444e;
+}
+
+.heading img {
+  width: 2%;
+}
+.about {
+  padding: 150px 0;
+  text-align: center;
+  color: #51444e;
+  font-family: "Genshin";
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.about p {
+  font-size: 25px;
+  line-height: 3;
+}
+
+.which {
+  padding: 150px 0;
+  font-family: "Genshin";
+  color: #51444e;
+}
+
+.which-list-wrap {
+  position: relative;
+  height: auto;
+}
+
+.which-list-background {
+  background: white;
+  border-radius: 30px;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  opacity: 0.5;
+  padding: 8% 0 8% 0;
+  margin: 0 10%;
+  z-index: -1;
+}
+
+.which-list {
+  display: flex;
+  padding: 8% 0 8% 0;
+  margin: 0 10% 120px 10%;
+  list-style: none;
+  justify-content: center;
+}
+
+.which-list li {
+  width: 100%;
+  padding: 0 6% 0 6%;
+}
+
+.which-list a {
+  text-decoration: none;
+  color: #51444e;
+}
+
+.which-list-type {
+  width: 100%;
+  font-size: 170%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.which-list-img-wrap {
+  width: 100%;
+  padding: 10% 0 10% 0;
+}
+.which-list-img-wrap img {
+  width: 100%;
+}
+
+.which-list-icon-wrap {
+  width: 100%;
+  padding: 10% 0 10% 0;
+}
+
+.icon {
+  width: 100%;
+}
+
+.care {
+  padding: 120px 0 170px 0;
+  color: #51444e;
+}
+
+.care-list-wrap {
+  position: relative;
+  height: auto;
+}
+
+.care-list-background {
+  background: white;
+  border-radius: 30px;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  opacity: 0.5;
+  margin: 0 10% 120px 10%;
+  z-index: -1;
+}
+
+.care-list {
+  list-style: none;
+  padding: 5% 0;
+  margin: 0 20% 0 20%;
+}
+
+.care-list-img-wrap {
+  width: 125%;
+}
+
+.care-list-img-wrap img {
+  width: 100%;
+}
+
+.care-list-sp-img-wrap {
+  display: none;
+}
+
+.care-list-sp-img-wrap img {
+  width: 100%;
+}
+
+.care-list li {
+  display: flex;
+  padding: 10% 0;
+}
+
+.care-list-text {
+  font-family: "Genshin";
+  margin: 4% 0 0 2%;
+}
+
+h3 {
+  font-size: 125%;
+  padding: 0 0 2% 0;
+}
+
+.care-list-type {
+  line-height: 1.5;
+}
+
+.care-line-img-wrap {
+  width: 100%;
+  margin: 0 0 3% 0;
+}
+
+.care-line-img-wrap img {
+  width: 100%;
+}
+
+.care-list-where {
+  display: flex;
+}
+
+.care-list-where-title {
+  display: flex;
+  margin-bottom: 3%;
+  height: 30px;
+}
+
+h4 {
+  font-size: 100%;
+  font-weight: 700;
+  padding: 0 4%;
+}
+
+.salon {
+  padding-right: 2.5%;
+}
+
+.care-list-salon-img-wrap {
+  width: 11%;
+}
+
+.care-list-salon-img-wrap img {
+  width: 100%;
+}
+
+.home {
+  padding-left: 2.5%;
+}
+
+.care-list-home-img-wrap {
+  width: 7.5%;
+}
+
+.care-list-home-img-wrap img {
+  width: 100%;
+}
+
+footer {
+  background-color: #51444e;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.1%;
+}
+
+.scroll-top {
+  width: 140px;
+}
+.scroll-top img {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 2% 0.5% 3%;
+    position: fixed;
+    z-index: 20;
+  }
+
+  .header-logo-wrap {
+    width: 80px;
+  }
+
+  .header-logo-wrap img {
+    width: 100%;
+  }
+
+  .header-nav-list {
+    list-style: none;
+  }
+
+  .header-nav-list li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .header-nav-list li img {
+    width: 10%;
+  }
+
+  .header-nav-list a {
+    text-decoration: none;
+    color: #51444e;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-family: "Genshin";
+  }
+
+  .header-nav-sp {
+    display: none;
+  }
+
+  .accbox label {
+    display: block;
+    color: #51444e;
+    cursor: pointer;
+    font-family: "Genshin";
+  }
+
+  .accbox input {
+    display: none;
+  }
+
+  .accbox .accshow {
+    position: absolute;
+    height: 0;
+    padding: 0 5px 3px 5px;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: right;
+    background-color: rgb(230, 216, 222);
+    border-radius: 0 0 10px 10px;
+    line-height: 30px;
+  }
+
+  .cssacc:checked + .accshow {
+    height: auto;
+    padding-top: 7px;
+    opacity: 1;
+  }
+
+  .main-visual {
+    width: 100%;
+    height: 380px;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .main-visual-title {
+    position: absolute;
+    top: 59%;
+    left: 9%;
+    color: #51444e;
+    font-size: 39px;
+    font-family: "Genshin";
+    line-height: 1.8;
+    font-weight: 100;
+  }
+
+  .main-visual-img-wrap {
+    width: 100%;
+    height: 100%;
+    float: none;
+  }
+
+  .main-visual-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .heading {
+    font-family: "Genshin";
+    padding: 0;
+    text-align: center;
+    color: #51444e;
+  }
+
+  .heading img {
+    width: 4%;
+    padding-bottom: 14px;
+  }
+
+  .about {
+    padding: 0;
+    margin: 23% 0;
+    text-align: center;
+    color: #51444e;
+    font-family: "Genshin";
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 3;
+  }
+
+  .which {
+    padding: 0;
+    margin: 23% 0;
+    font-family: "Genshin";
+    color: #51444e;
+  }
+
+  .which-list-wrap {
+    position: relative;
+    height: auto;
+  }
+
+  .which-list-background {
+    background: white;
+    border-radius: 30px;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 0.5;
+    padding: 8% 0 8% 0;
+    margin: 0 10%;
+    z-index: -1;
+  }
+
+  .which-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8% 0 8% 0;
+    margin: 0 10% 0 10%;
+    list-style: none;
+  }
+
+  .which-list li {
+    width: 20%;
+    padding: 0;
+    margin: 3% 10%;
+  }
+
+  .which-list a {
+    text-decoration: none;
+    color: #51444e;
+  }
+
+  .which-list-type {
+    width: 100%;
+    font-size: 50%;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .which-list-img-wrap {
+    width: 100%;
+    padding: 0;
+  }
+  .which-list-img-wrap img {
+    width: 100%;
+  }
+
+  .which-list-icon-wrap {
+    width: 100%;
+    padding: 0;
+  }
+
+  .icon {
+    width: 100%;
+  }
+
+  .care {
+    padding: 60px 0 90px 0;
+    color: #51444e;
+  }
+
+  .care-list-wrap {
+    position: relative;
+    height: auto;
+  }
+
+  .care-list-background {
+    background: white;
+    border-radius: 30px;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 0.5;
+    margin: 0 10% 120px 10%;
+    z-index: -1;
+  }
+
+  .care-list {
+    list-style: none;
+    padding: 5% 0;
+    margin: 0 20% 0 20%;
+    text-align: center;
+  }
+
+  .care-list-img-wrap {
+    display: none;
+    width: 125%;
+  }
+
+  .care-list-img-wrap img {
+    width: 100%;
+  }
+
+  .care-list-sp-img-wrap {
+    display: flex;
+    width: 59%;
+    margin: auto;
+  }
+
+  .care-list-sp-img-wrap img {
+    width: 100%;
+  }
+
+  .care-list li {
+    display: block;
+    padding: 10% 0;
+  }
+
+  .care-list-text {
+    font-family: "Genshin";
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 125%;
+    padding: 5% 0;
+  }
+
+  .care-list-type {
+    line-height: 1.8;
+    padding: 0 10%;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .care-line-img-wrap {
+    width: 100%;
+    margin: 0 0 7% 0;
+  }
+
+  .care-line-img-wrap img {
+    width: 100%;
+  }
+
+  .care-list-where {
+    display: block;
+    padding: 0 10%;
+  }
+
+  .care-list-where-title {
+    display: flex;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  h4 {
+    font-size: 80%;
+    font-weight: 1000;
+    padding: 0 6%;
+  }
+
+  .salon {
+    padding-right: 0;
+    margin: 10% 0;
+  }
+
+  .care-list-salon-img-wrap {
+    width: 18%;
+  }
+
+  .care-list-salon-img-wrap img {
+    width: 100%;
+  }
+
+  .care-list-where-text {
+    line-height: 1.8;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .home {
+    padding-left: 0;
+    margin: 10% 0;
+  }
+
+  .care-list-home-img-wrap {
+    width: 15%;
+  }
+
+  .care-list-home-img-wrap img {
+    width: 100%;
+  }
+
+  footer {
+    background-color: #51444e;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4%;
+  }
+
+  .scroll-top {
+    width: 40px;
+  }
+  .scroll-top img {
+    width: 100%;
+  }
+}

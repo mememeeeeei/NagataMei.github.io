@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字コード設定 -->
+    <meta charset="UTF-8" />
+    <!-- いろんなデバイス幅で表示崩れが起きないようにするやつ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ページタイトル -->
+    <title>タイトル</title>
+    <!-- ページ情報 -->
+    <meta name="description" content="ここにページの説明を書く" />
+    <!-- 検索で引っかかるようにする -->
+    <meta name="keywords" content=",で区切ってキーワード" />
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- jquery読み込み(必要な人のみ) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a
+        href="file:///Users/nagatamei/Desktop/%E3%82%B5%E3%82%A4%E3%83%88/index.html#"
+        class="header-logo-wrap"
+      >
+        <img src="images/logo.png" alt="ロゴ" />
+      </a>
+      <ul class="header-nav-list">
+        <li>
+          <div class="header-nav-sp">
+            <a
+              href="file:///Users/nagatamei/Desktop/%E3%82%B5%E3%82%A4%E3%83%88/index.html#"
+              >トップ</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="accbox">
+            <label for="label"
+              >髪質を選ぶ<img src="images/down.png" alt=""
+            /></label>
+            <input type="checkbox" id="label" class="cssacc" />
+            <div class="accshow">
+              <a
+                href="file:///Users/nagatamei/Desktop/%E3%82%B5%E3%82%A4%E3%83%88/care.html#"
+              >
+                <p>かたい</p></a
+              >
+              <a
+                href="file:///Users/nagatamei/Desktop/%E3%82%B5%E3%82%A4%E3%83%88/care.html#yawai"
+              >
+                <p>やわらかい</p></a
+              >
+              <a
+                href="file:///Users/nagatamei/Desktop/%E3%82%B5%E3%82%A4%E3%83%88/care.html#suto"
+              >
+                <p>直毛</p></a
+              >
+              <a
+                href="file:///Users/nagatamei/Desktop/%E3%82%B5%E3%82%A4%E3%83%88/care.html#unya"
+              >
+                <p>癖毛</p></a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <section class="care">
+      <div class="care-list-wrap">
+        <div class="care-list-background"></div>
+        <ul class="care-list">
+          <li id="katai">
+            <div class="care-list-img-wrap">
+              <img src="images/icon-suto-w.line.png" />
+            </div>
+            <div class="care-list-sp-img-wrap">
+              <img src="images/icon-suto.png" />
+            </div>
+            <div class="care-list-text">
+              <h3>かたい髪質</h3>
+              <p class="care-list-type">
+                内部にタンパク質がぎっしりつまっていて健康的です。束感ができにくく、パーマもかかりにくい。重たい印象に見えがちです。
+              </p>
+              <div class="care-line-img-wrap">
+                <img src="images/care-line@4x.png" />
+              </div>
+              <div class="care-list-where">
+                <div class="salon">
+                  <div class="care-list-where-title">
+                    <div class="care-list-salon-img-wrap">
+                      <img src="images/salon.png" />
+                    </div>
+                    <h4>サロンで</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    毛先にパーマをかけるだけでも柔らかく見せることができます。ヘアカラーで明るい印象にも。
+                  </p>
+                </div>
+                <div class="home">
+                  <div class="care-list-where-title">
+                    <div class="care-list-home-img-wrap">
+                      <img src="images/home.png" />
+                    </div>
+                    <h4>自宅で</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    髪の水分が不足するとより硬くなってしまいます。保湿力の高いシャンプーやトリートメントを使うと良いです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="yawai">
+            <div class="care-list-img-wrap">
+              <img src="images/icon-unya-w.line.png" />
+            </div>
+            <div class="care-list-sp-img-wrap">
+              <img src="images/icon-unya.png" />
+            </div>
+            <div class="care-list-text">
+              <h3>やわらかい髪質</h3>
+              <p class="care-list-type">
+                毛のタンパク質の密度が低く、キューティクルが薄いです。やわらかく扱いやすいけれど、ハリがなくボリュームが出しにくいです。
+              </p>
+              <div class="care-line-img-wrap">
+                <img src="images/care-line@4x.png" />
+              </div>
+              <div class="care-list-where">
+                <div class="salon">
+                  <div class="care-list-where-title">
+                    <div class="care-list-salon-img-wrap">
+                      <img src="images/salon.png" />
+                    </div>
+                    <h4>サロンで</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    根元にのみパーマをかけるたり、段を入れるレイヤーカットなどでボリュームを出すことができます。
+                  </p>
+                </div>
+                <div class="home">
+                  <div class="care-list-where-title">
+                    <div class="care-list-home-img-wrap">
+                      <img src="images/home.png" />
+                    </div>
+                    <h4>自宅で</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    髪の主成分である「ケラチン」を補うことができるシャンプーやトリートメントを使用するとハリのある髪に近づきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="suto">
+            <div class="care-list-img-wrap">
+              <img src="images/icon-suto-w.line.png" />
+            </div>
+            <div class="care-list-sp-img-wrap">
+              <img src="images/icon-suto.png" />
+            </div>
+            <div class="care-list-text">
+              <h3>直毛</h3>
+              <p class="care-list-type">
+                髪内部のかたい部分とやわらかい部分のタンパク質の量がほぼ等しいので真直ぐです。編むにも絡まず、アクセサリーもとまりづらいのでアレンジが難しいです。
+              </p>
+              <div class="care-line-img-wrap">
+                <img src="images/care-line@4x.png" />
+              </div>
+              <div class="care-list-where">
+                <div class="salon">
+                  <div class="care-list-where-title">
+                    <div class="care-list-salon-img-wrap">
+                      <img src="images/salon.png" />
+                    </div>
+                    <h4>サロンで</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    一般的なパーマに加えて熱加工を施し、カールを形状記憶させるデジタルパーマをかけると長持ちしやすいです。
+                  </p>
+                </div>
+                <div class="home">
+                  <div class="care-list-where-title">
+                    <div class="care-list-home-img-wrap">
+                      <img src="images/home.png" />
+                    </div>
+                    <h4>自宅で</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    就寝時にカーラーを巻くと、自然なウェーブに仕上がります。また、スカーフやリボンなど異素材のものと一緒に編むと絡みやすくなります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="unya">
+            <div class="care-list-img-wrap">
+              <img src="images/icon-unya-w.line.png" />
+            </div>
+            <div class="care-list-sp-img-wrap">
+              <img src="images/icon-unya.png" />
+            </div>
+            <div class="care-list-text">
+              <h3>癖毛</h3>
+              <p class="care-list-type">
+                髪内部の水分バランスが偏っていてハネやうねりが生じ、広がってしまうので扱いにくいです。一番の原因は遺伝ですが、ストレスや、ホルモンバランスの崩れ、シャンプーなどの添加物の詰まりも影響しています。
+              </p>
+              <div class="care-line-img-wrap">
+                <img src="images/care-line@4x.png" />
+              </div>
+              <div class="care-list-where">
+                <div class="salon">
+                  <div class="care-list-where-title">
+                    <div class="care-list-salon-img-wrap">
+                      <img src="images/salon.png" />
+                    </div>
+                    <h4>サロンで</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    髪への負担は大きいが縮毛矯正やストレートパーマをかけると毎日のヘアセットが楽になります。
+                  </p>
+                </div>
+                <div class="home">
+                  <div class="care-list-where-title">
+                    <div class="care-list-home-img-wrap">
+                      <img src="images/home.png" />
+                    </div>
+                    <h4>自宅で</h4>
+                  </div>
+                  <p class="care-list-where-text">
+                    トリートメントや、オイル、ヘアバターなどで保湿しキューティクルを維持することが大切です。シャンプーはオイルの効果もあるアミノ酸系がおすすめです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <a class="scroll-top" href="#">
+        <img src="images/up.png" />
+      </a>
+    </footer>
+  </body>
+</html>
