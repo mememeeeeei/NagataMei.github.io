@@ -280,6 +280,7 @@ h3 {
 
 .care-line-img-wrap img {
   width: 100%;
+  height:1px;
 }
 
 .care-list-where {
@@ -579,7 +580,7 @@ footer {
   }
 
   .care-list-sp-img-wrap {
-    display: flex;
+    display: block;
     width: 59%;
     margin: auto;
   }
